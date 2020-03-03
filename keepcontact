@@ -1,9 +1,0 @@
-#!C:/wamp64/bin/php/php7.2.14/php.exe
-<?php
-    include 'addcontact.php';
-    // include 'listcontact';
-    // include 'editcontact';
-    // include 'searchcontact';
-
-
-?>
