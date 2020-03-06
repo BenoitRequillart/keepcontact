@@ -30,10 +30,10 @@
             
             // On ajoute le nouvel élement
             array_push( $newcontact, array(
-                'nom' => $name,
-                'prenom' => $firstname,
+                'nom' => strtolower($name),
+                'prenom' => strtolower($firstname),
                 'phonenumber' => $phone,
-                'mail' => $mail
+                'mail' => strtolower($mail)
             ));
             // On réencode en JSON
             $contenu_json = json_encode($newcontact);

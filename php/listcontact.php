@@ -7,12 +7,13 @@
             $contact_fileData = file_get_contents($contact_file);
             
             $listcontact = json_decode($contact_fileData, true);
-            $i = 0;
-            while( $i < count($listcontact)) { 
-                print_r('NOM : '.$listcontact[$i]['nom']."\n");
-                print_r('PRENOM : '.$listcontact[$i]['prenom']."\n");
+            $i = 1;
+            while( $i < count($listcontact) && $i > 0) { 
+                echo "Contact n°$i\n";
+                print_r('NOM : '.ucfirst($listcontact[$i]['nom'])."\n");
+                print_r('PRENOM : '.ucfirst($listcontact[$i]['prenom'])."\n");
                 print_r('NUMERO DE TELEPHONE : '.$listcontact[$i]['phonenumber']."\n");
-                print_r('MAIL : '.$listcontact[$i]['mail']."\n");
+                print_r('MAIL : '.strtolower($listcontact[$i]['mail'])."\n");
                 echo "===============================\n";
                 $i++;
             }
