@@ -1,0 +1,8 @@
+Package: keepcontact
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: php
+Maintainer: Mr X <MrX@fun.com>
+Description: Echoes the content of /home/<you>/.myecho_content

@@ -1,0 +1,22 @@
+#!C:/wamp64/bin/php/php7.2.14/php.exe
+<?php
+    
+    
+    if (isset($argv[1])) {
+        require 'addcontact.php';
+        require 'listcontact.php';
+        require 'editcontact.php';
+        require 'searchcontact.php';
+    }
+    elseif(empty($argv[1])){
+        echo "./keepcontact add : add a new contact to your list\n";
+        echo "./keepcontact list : list all your contact\n";
+        echo "./keepcontact edit * : search a contact by is ID and edit him\n";
+        echo "./keepcontact search : search a contact\n";
+    }
+    
+
+
+    
+
+?>

@@ -1,0 +1,3 @@
+#!/bin/bash
+touch ~/.keepcontact_content
+echo "HELLO WORLD" > ~/.keepcontact_content
